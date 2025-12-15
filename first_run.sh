@@ -68,6 +68,7 @@ if [ "$ANSWER" = "Y" ] || [ "$ANSWER" = "y" ]; then
         sudo python3 -m pip install --upgrade meson pip ninja # upgrade meson
         sudo apt install -y net-tools openssh-server #network
         sudo apt install -y htop btop plocate # process
+        sudo apt instal proxychains4 curl wget # download
 fi
 
 #fzf
