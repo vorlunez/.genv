@@ -83,3 +83,14 @@ if [ "$ANSWER" = "Y" ] || [ "$ANSWER" = "y" ]; then
         fi
         fzf --version
 fi
+
+
+# proxychains4 usage: proxychain4 + command
+read -p "would you want to install proxychains4 ?[Y/N]" ANSWER
+if [ "$ANSWER" = "Y" ] || [ "$ANSWER" = "y" ]; then
+        sudo apt install -y proxychains4
+        mkdir -p $HOME/.proxychains
+        if [ ! -f "$HOME/.proxychains/proxychains.conf" ]; then
+                echo -e "[ProxyList]\nsocks5 127.0.0.1 1080" > $HOME/.proxychains/proxychains.conf
+        fi
+fi

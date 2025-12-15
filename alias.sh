@@ -13,3 +13,5 @@ alias gpl='git pull'
 alias gc='git commit'
 alias gl='git log'
 alias gs='git status'
+
+alias pc='proxychains4'
