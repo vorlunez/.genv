@@ -53,3 +53,4 @@ sudo /usr/src/linux-headers-`uname -r`/scripts/sign-file sha256 ./${filename_key
 sudo mokutil --import ${filename_key}.der 
 echo "Now it's time for reboot, remember the password. You will get a blue screen after reboot choose 'Enroll MOK' -> 'Continue' -> 'Yes' -> 'enter password' -> 'OK' or 'REBOOT' " 
 ```
+OKOK
